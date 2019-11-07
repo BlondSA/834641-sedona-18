@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Стрючков](https://up.htmlacademy.ru/adaptive/18/user/834641).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Алипкин`.
 
 ---
 
