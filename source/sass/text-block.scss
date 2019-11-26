@@ -1,0 +1,49 @@
+.text-block {
+  margin: 0;
+  padding: 0;
+  background-color: $light-grey;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    color: $black-two;
+
+    &--blue {
+      color: $white;
+    }
+  }
+
+  &__number {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 1.5;
+
+    &--blue {
+      color: $white;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    &--blue {
+      color: $white;
+    }
+  }
+
+  &--blue {
+    margin: 0;
+    padding: 0;
+    background-color: $light-grey-blue;
+    color: $white;
+  }
+}

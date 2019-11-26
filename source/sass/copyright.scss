@@ -1,0 +1,26 @@
+.copyright {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: $black-two;
+  }
+
+  &__link {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__image {
+    padding: 0;
+    margin: 0;
+    fill: $black-two;
+  }
+}

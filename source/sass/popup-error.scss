@@ -1,0 +1,33 @@
+.popup-error {
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    color: $black-two;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: $black;
+    padding-bottom: 29px;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    cursor: pointer;
+  }
+}

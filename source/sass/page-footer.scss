@@ -1,0 +1,23 @@
+.page-footer {
+  text-transform: uppercase;
+
+  &__contacts {
+    padding: 0;
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    text-align: center;
+    color: $black-two;
+  }
+
+  &__social {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__copyright {
+    padding: 0;
+    margin: 0;
+  }
+}

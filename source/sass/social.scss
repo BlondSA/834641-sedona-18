@@ -1,0 +1,47 @@
+.social {
+  padding: 0;
+  margin: 0;
+  padding-left: 26.2%;
+  padding-right: 26.2%;
+  box-sizing: border-box;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    background-color: $light-grey-blue;
+    margin-right: 0.95%;
+    margin-left: 0.95%;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__image {
+    padding: 0;
+    margin: 0;
+    fill: $white;
+  }
+}
