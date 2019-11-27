@@ -1,0 +1,26 @@
+.radio {
+  position: relative;
+  margin-left: 65px;
+  margin-top: 50px;
+
+  &__input {
+    appearance: none;
+
+    &:checked~.radio__icon {
+      background-color: $black;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #f2f2f2;
+    border: 17px solid #f2f2f2;
+    border-radius: 50%;
+    bottom: -14px;
+    left: -65px;
+  }
+}

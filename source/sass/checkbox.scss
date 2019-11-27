@@ -1,0 +1,26 @@
+.checkbox {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 50px;
+
+  &__input {
+    appearance: none;
+
+    &:checked~.checkbox__icon {
+      background: $light-grey url("../img/icon-tick.svg") no-repeat center center;
+    }
+  }
+
+  &__icon {
+
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: solid 5px $light-grey;
+    background: $light-grey;
+    border-radius: 10%;
+    bottom: -15px;
+    left: -80px;
+  }
+}

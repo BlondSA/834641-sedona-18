@@ -1,0 +1,42 @@
+.input {
+
+
+
+  &__label {
+    text-transform: uppercase;
+    line-height: 1.86;
+    text-align: left;
+    color: $black;
+  }
+
+  &__field-wrapper {}
+
+  &__field {
+    background-color: $light-grey;
+    border: none;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+
+
+    &::-webkit-input-placeholder {
+      color: $black-two;
+      font-family: PT Sans, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.44;
+      text-align: left;
+    }
+
+
+    &--with-icon {}
+  }
+
+  &--horizontal {
+    flex-direction: column;
+  }
+
+  &__row {}
+}
