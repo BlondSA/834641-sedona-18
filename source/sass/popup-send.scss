@@ -1,31 +1,35 @@
 .popup-send {
   text-align: center;
 
+  &__text-wrapper {
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+    @include padding-lr-50;
+  }
+
   &__title {
     margin: 0;
     text-transform: uppercase;
-    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.44;
     color: $black-two;
     text-align: center;
-    padding-left: 16.2%;
-    padding-right: 16.5%;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 
-  &__text {
+  &__description {
     margin: 0;
+    padding: 0;
     text-transform: uppercase;
-    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
     color: $black;
-    padding-left: 16.2%;
-    padding-right: 16.5%;
-    padding-bottom: 40px;
+    margin-top: 25px;
   }
 
   &__button-wrapper {
@@ -35,6 +39,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include padding-lr-20;
+    box-sizing: border-box;
   }
 
   &__button {

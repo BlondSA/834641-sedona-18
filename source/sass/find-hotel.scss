@@ -1,8 +1,10 @@
 .find-hotel {
-  padding: 0;
-  margin: 0;
   text-align: center;
   text-transform: uppercase;
+
+  &__text-wrapper {
+    margin: 0;
+  }
 
   &__title {
     padding: 0;
@@ -11,29 +13,24 @@
     font-weight: bold;
     line-height: 1.24;
     color: $black-two;
+    margin-bottom: 33px;
   }
 
   &__description {
     padding: 0;
     margin: 0;
     line-height: 1.71;
+    margin-top: 33px;
+    margin-bottom: 40px;
   }
 
   &__button {
-width: 280px;
+    width: 280px;
   }
 
   &__link {
-
-  }
-
-  &__link-map {
-
-  }
-
-  &__image {
-    padding: 0;
-    margin: 0;
-    object-fit: contain;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
   }
 }

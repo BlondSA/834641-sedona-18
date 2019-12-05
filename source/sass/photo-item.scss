@@ -1,5 +1,4 @@
 .photo-item {
-
   &__figure {
     margin: 0;
     padding: 0;
@@ -21,11 +20,7 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
-    letter-spacing: normal;
-    text-align: left;
     color: $black-two;
   }
 
@@ -42,7 +37,8 @@
     color: $black-two;
     position: relative;
     margin-left: 11.6%;
-    &:before {
+
+    &::before {
       display: block;
       position: absolute;
       content: "";

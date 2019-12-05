@@ -1,40 +1,23 @@
 .advantages {
-  padding: 0;
-  margin: 0;
-
-  &__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f2f2f2;
   }
 
-  &__item {
-    display: flex;
+  &__text-block {
+    @include padding-tb-25;
   }
 
   &__image {
     padding: 0;
     margin: 0;
-    object-fit: contain;
-    fill: $light-grey-blue;
   }
 
-  &__text-wrapper {}
-
-  &__title {
-    padding: 0;
+  &__list {
     margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.44;
-    color: $black-two;
-    text-transform: uppercase;
-  }
-
-  &__description {
     padding: 0;
-    margin: 0;
-    line-height: 1.5;
-    text-transform: uppercase;
+
+    @include padding-lr-20;
   }
 }

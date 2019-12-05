@@ -1,8 +1,4 @@
 .social {
-  padding: 0;
-  margin: 0;
-  padding-left: 26.2%;
-  padding-right: 26.2%;
   box-sizing: border-box;
 
   &__list {
@@ -10,6 +6,8 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 40px;
   }
 
   &__item {
@@ -21,8 +19,8 @@
     width: 46px;
     height: 48px;
     background-color: $light-grey-blue;
-    margin-right: 0.95%;
-    margin-left: 0.95%;
+    margin-right: 3px;
+    margin-left: 3px;
     box-sizing: border-box;
 
     &:first-child {

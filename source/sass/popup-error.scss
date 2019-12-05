@@ -1,33 +1,41 @@
 .popup-error {
   text-align: center;
 
+  &__text-wrapper {
+    padding-top: 45px;
+    padding-bottom: 30px;
+
+    @include padding-lr-55;
+  }
+
   &__title {
     margin: 0;
     text-transform: uppercase;
-    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.44;
     color: $black-two;
     text-align: center;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 
-  &__text {
+  &__description {
     margin: 0;
     text-transform: uppercase;
-    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
     color: $black;
-    padding-bottom: 29px;
+    margin-top: 25px;
   }
 
   &__button {
     margin: 0;
     padding: 0;
     width: 180px;
+    margin-top: 29px;
     cursor: pointer;
   }
 }

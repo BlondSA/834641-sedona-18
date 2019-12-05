@@ -2,14 +2,36 @@
   padding: 0;
   margin: 0;
 
+  &__promo-block {
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+    padding-bottom: 85px;
+    margin-top: -30px;
+
+    @include padding-lr-20;
+  }
+
   &__page-info {
     padding: 0;
     margin: 0;
-    
+    padding-top: 40px;
   }
 
   &__presentation {
     padding: 0;
     margin: 0;
+  }
+
+  &__find-hotel {
+    padding-top: 33px;
+
+    @include padding-lr-20;
+    padding-bottom: 49px;
+  }
+
+  &__map {
+    margin: 0;
+    padding: 0;
   }
 }

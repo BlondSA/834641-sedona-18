@@ -1,9 +1,4 @@
 .promo-block {
-  margin: 0;
-  padding: 0;
-  margin-top: -27px;
-  width: 320px;
-  height: 389px;
   object-fit: contain;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -11,9 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: -1;
 
   &--minimal {
-    height: 160px;
+    padding-top: 52px;
+    padding-bottom: 66px;
   }
 
   &__image {
@@ -22,5 +20,10 @@
     margin-top: auto;
     margin-bottom: auto;
     object-fit: contain;
+  }
+
+  &__image-triangle {
+    position: absolute;
+    bottom: 0;
   }
 }

@@ -5,8 +5,11 @@
   &__item {
     background-color: $light-grey-blue;
     list-style: none;
-    box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 $white-20;
+    box-shadow: 0 1 0 0 rgba(1, 1, 1, 0.2);
+    inset: 0 1 0 0 $white-20;
     text-align: center;
+
+    @include padding-tb-8;
   }
 
   &__link {
