@@ -1,0 +1,86 @@
+// top-bottom
+@mixin padding-tb-8 {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+@mixin padding-tb-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@mixin padding-tb-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@mixin padding-tb-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@mixin padding-tb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@mixin padding-tb-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@mixin padding-tb-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+// left-right
+@mixin padding-lr-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@mixin padding-lr-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin padding-lr-23 {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+@mixin padding-lr-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@mixin padding-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin padding-lr-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@mixin padding-lr-47 {
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+@mixin padding-lr-50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@mixin padding-lr-55 {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+@mixin padding-lr-75 {
+  padding-left: 75px;
+  padding-right: 75px;
+}

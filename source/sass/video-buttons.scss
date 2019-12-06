@@ -2,23 +2,20 @@
   margin: 0;
   padding: 0;
   margin-top: -45px;
-  padding-left: 6.2%;
-  padding-right: 6.2%;
 
-  &__volume-slider {
+  @include padding-lr-20;
+
+  &__range {
     margin: 0;
     padding: 0;
     height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   &__buttons-control {
     margin: 0;
     padding: 0;
     height: 66px;
-    padding-left: 8.9%;
-    padding-right: 8.2%;
+
+    @include padding-lr-20;
   }
 }

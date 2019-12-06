@@ -26,19 +26,9 @@
             >
           </li>
         </ul>
-      </nav>
-      <div class="page-header__logo logo">
-        <a class="logo__link" href="#">
-          <img
-            class="logo__image"
-            src="img/logo-sedona-mobile.svg"
-            width="102px"
-            height="83px"
-            alt="Город Седона"
-        /></a>
-        <button class="logo__toggle" type="button">
+        <button class="main-nav__toggle" type="button">
           <svg
-            class="logo__toggle-image"
+            class="main-nav__toggle-image"
             width="23px"
             height="21px"
             viewBox="0 0 22.928 21.982"
@@ -50,6 +40,16 @@
             </g>
           </svg>
         </button>
+      </nav>
+      <div class="page-header__logo logo">
+        <a class="logo__link" href="#">
+          <img
+            class="logo__image"
+            src="img/logo-sedona-mobile.svg"
+            width="102px"
+            height="83px"
+            alt="Город Седона"
+        /></a>
       </div>
     </header>
     <main class="page-main">
@@ -61,15 +61,40 @@
           height="39px"
           alt=""
         />
+        <svg
+          class="promo-block__image-triangle"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="320px"
+          height="26.111px"
+          viewBox="440.469 30.889 320 26.111"
+          enable-background="new 440.469 30.889 320 26.111"
+          xml:space="preserve"
+        >
+          <polygon
+            fill="#FFFFFF"
+            points="760.469,57 760.469,30.889 599.955,57"
+          />
+          <polygon
+            fill="#FFFFFF"
+            points="440.469,57 599.955,57 440.469,31.056"
+          />
+        </svg>
       </div>
       <section class="page-main__page-info page-info">
-        <h1 class="page-info__title">
-          Фото и видео
-        </h1>
-        <p class="page-info__text">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
-        </p>
+        <div class="page-info__text-wrapper">
+          <h1 class="page-info__title">
+            Фото и видео
+          </h1>
+          <p class="page-info__text page-info__text--photo-width">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+        </div>
         <ul class="page-info__photo-list photo-list">
           <li class="photo-list__photo-item photo-item">
             <figure class="photo-item__figure">
@@ -148,15 +173,24 @@
         </ul>
       </section>
       <div class="page-main__presentation presentation">
-        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__description">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
-          в очередной раз!
-        </p>
+        <div class="presentation__text-wrapper">
+          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+          <p class="presentation__description">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
+        </div>
         <img class="presentation__video" src="img/video-mobile@1x.jpg" />
-        <div class="presentation__video-controls video-buttons">
-          <div class="video-buttons__volume-slider volume-slider">
-            <input class="volume-slider__range" type="range"/>
+        <div class="presentation__video-buttons video-buttons">
+          <div class="video-buttons__range range">
+            <input
+              class="range__input"
+              type="range"
+              min="0"
+              max="100"
+              value="15"
+              step="1"
+            />
           </div>
           <div class="video-buttons__buttons-control buttons-control">
             <button class="buttons-control__replay">

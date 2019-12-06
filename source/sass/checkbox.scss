@@ -6,7 +6,7 @@
   &__input {
     appearance: none;
 
-    &:checked~.checkbox__icon {
+    &:checked ~ .checkbox__icon {
       background: $light-grey url("../img/icon-tick.svg") no-repeat center center;
     }
   }

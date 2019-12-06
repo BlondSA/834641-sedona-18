@@ -1,8 +1,7 @@
 .copyright {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   &__text {
     padding: 0;
@@ -11,11 +10,13 @@
     line-height: 1.86;
     text-align: center;
     color: $black-two;
+    margin-right: 5px;
   }
 
   &__link {
     padding: 0;
     margin: 0;
+    margin-left: 5px;
   }
 
   &__image {

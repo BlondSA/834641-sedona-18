@@ -1,31 +1,57 @@
 .page-info {
+  position: relative;
 
+  &__text-wrapper {
+    margin: 0;
+    padding: 0;
+  }
 
   &__title {
     margin: 0;
     padding: 0;
-    @include Text-Style-19;
+
+    @include text-style-18;
     text-transform: uppercase;
-    padding-left: 6.2%;
-    padding-right: 6.2%;
+
+    @include padding-lr-25;
   }
 
   &__text {
     margin: 0;
     padding: 0;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.86;
-    letter-spacing: normal;
     text-align: center;
     color: $black;
     text-transform: uppercase;
-    padding-left: 6.2%;
-    padding-right: 6.2%;
+
+    @include padding-lr-20;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    &--form-width {
+      @include padding-lr-23;
+    }
+
+    &--photo-width {
+      @include padding-lr-25;
+    }
+  }
+
+  &__bg-triangle {
+    position: absolute;
+  }
+
+  &__reason {
+    padding: 0;
+    margin: 0;
   }
 
   &__form {
     margin: 0;
+  }
+
+  &__photo-list {
+    margin: 0;
+    padding: 0;
   }
 }
