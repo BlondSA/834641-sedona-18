@@ -1,0 +1,117 @@
+.photo-item {
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid $black-30;
+
+  &:last-child {
+    border-bottom: 1px solid $black-30;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item {
+    border-top: none;
+    width: 50%;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      margin-right: auto;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photo-item {
+    width: ($desktop-width/3);
+  }
+}
+
+.photo-item__figure {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-item__link {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-item__image {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-item__caption {
+  margin: 0;
+  padding: 0;
+  margin-top: -3px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item__caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-grey;
+
+    @include padding-lr-20;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .photo-item__caption {
+    background-color: $black-60;
+    margin-top: -72px;
+  }
+}
+
+
+.photo-item__title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  color: $black-two;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.photo-item__author {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.photo-item__likes {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  line-height: 1.71;
+  color: $black-two;
+  position: relative;
+  padding-left: 38px;
+  margin-top: 15px;
+
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 21px;
+    background: url("../img/icon-like.svg") no-repeat;
+    fill: $black-two;
+    opacity: 0.3;
+    left: 0;
+    top: -2px;
+  }
+}

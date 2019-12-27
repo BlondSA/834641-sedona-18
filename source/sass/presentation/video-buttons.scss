@@ -1,0 +1,30 @@
+.video-buttons {
+  margin: 0;
+  padding: 0;
+  margin-top: -46px;
+
+  @include padding-lr-20;
+}
+
+@media (min-width: $tablet-width) {
+  .video-buttons {
+    margin-top: -95px;
+
+    @include padding-lr-0;
+  }
+}
+
+.video-buttons__buttons-control {
+  margin: 0;
+  padding: 0;
+
+  @include padding-lr-25;
+  @include padding-tb-23;
+}
+
+@media (min-width: $tablet-width) {
+  .video-buttons__buttons-control {
+    @include padding-lr-35;
+    @include padding-tb-35;
+  }
+}

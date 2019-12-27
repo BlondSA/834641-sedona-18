@@ -1,0 +1,78 @@
+.reference {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .reference {
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .reference {
+    flex-direction: row;
+  }
+}
+
+.reference__item {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reference__icon {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 37px;
+  height: 36px;
+  left: 0;
+  top: 0;
+
+  &--house {
+    background: url("../img/icon-house.svg") no-repeat;
+    fill: #81b3d2;
+  }
+
+  &--gift {
+    background: url("../img/icon-gift.svg") no-repeat;
+    fill: #81b3d2;
+  }
+
+  &--burger {
+    background: url("../img/icon-burger.svg") no-repeat;
+    fill: #81b3d2;
+  }
+}
+
+.reference__text-wrapper {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-left: 50px;
+}
+
+.reference__title {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: $black-two;
+  text-transform: uppercase;
+}
+
+.reference__description {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}

@@ -1,0 +1,131 @@
+.page-info {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @include padding-lr-25;
+
+  &--photo-padding {
+    padding-bottom: 33px;
+  }
+
+  &--form-padding {
+    padding-bottom: 22px;
+
+    @include padding-lr-20;
+  }
+
+  &--triangle::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url("../img/bg-triangle.svg");
+    bottom: -36px;
+    left: 50%;
+    width: 320px;
+    height: 37px;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    &--triangle::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-info {
+    @include padding-lr-130;
+    padding-top: 51px;
+    padding-bottom: 55px;
+
+    &--photo-padding {
+      @include padding-lr-170;
+      padding-top: 76px;
+      padding-bottom: 75px;
+    }
+
+    &--form-padding {
+      @include padding-lr-165;
+      padding-top: 71px;
+      padding-bottom: 84px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-info {
+    @include padding-lr-355;
+    padding-top: 51px;
+    padding-bottom: 55px;
+
+    &--photo-padding {
+      @include padding-lr-380;
+      padding-top: 113px;
+      padding-bottom: 77px;
+    }
+
+    &--form-padding {
+      @include padding-lr-380;
+      padding-top: 108px;
+      padding-bottom: 69px;
+    }
+  }
+}
+
+.page-info__title {
+  margin: 0;
+  padding: 0;
+
+  @include text-style-18;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-info__title {
+    font-size: 21px;
+    line-height: 1.86;
+
+    &--photo-font-size {
+      font-size: 30px;
+      line-height: 0.87;
+    }
+
+    &--form-font-size {
+      font-size: 30px;
+      line-height: 0.87;
+    }
+  }
+}
+
+.page-info__text {
+  margin: 0;
+  padding: 0;
+  line-height: 1.86;
+  text-align: center;
+  color: $black;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-info__text {
+    line-height: 1.86;
+
+    &--photo-font-size {
+      line-height: 1.71;
+    }
+
+    &--form-font-size {
+      line-height: 1.71;
+    }
+  }
+}
+
+.page-info__bg-triangle {
+  position: absolute;
+}
