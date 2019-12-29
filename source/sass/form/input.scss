@@ -1,0 +1,99 @@
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--vertical {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input--vertical {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 480px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+
+    &:first-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 79px;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.input__field-wrapper {
+  position: relative;
+  flex-grow: 1;
+}
+
+.input__label {
+  text-transform: uppercase;
+  line-height: 1.86;
+  color: $black;
+  margin-right: 15px;
+}
+
+@media (min-width: $desktop-width) {
+  .input__text-hidden {
+    @include visually-hidden;
+  }
+}
+
+.input__field {
+  background-color: $light-grey;
+  border: none;
+  font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 58px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+
+  &--with-icon {
+    padding-right: 58px;
+  }
+
+
+  &::-webkit-input-placeholder {
+    color: $black-two;
+    font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+  }
+}
+
+.input__icon {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 58px;
+  height: 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--telephone {
+    background: 50% 50% url("../img/icon-phone.svg") $dark-grey no-repeat;
+  }
+
+  &--email {
+    background: 50% 50% url("../img/icon-mail.svg") $dark-grey no-repeat;
+  }
+}

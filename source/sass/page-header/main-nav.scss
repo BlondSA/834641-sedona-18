@@ -1,0 +1,29 @@
+.main-nav {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  right: 20px;
+  bottom: -40px;
+  cursor: pointer;
+}
+
+.main-nav__toggle-image {
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  fill: $light-grey-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle-image {
+    @include visually-hidden;
+  }
+}

@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: $black-two;
+  margin-right: 5px;
+}
+
+.copyright__link {
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.copyright__image {
+  padding: 0;
+  margin: 0;
+  fill: $black-two;
+}
