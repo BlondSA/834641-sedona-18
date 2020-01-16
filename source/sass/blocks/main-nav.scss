@@ -4,14 +4,26 @@
   box-sizing: border-box;
 }
 
+.main-nav__toggle-close {
+  position: absolute;
+  top: -222px;
+  right: 7px;
+  fill: $white-two;
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle-close {
+    display: none;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
-  margin: 0;
-  padding: 0;
   background: none;
   border: none;
-  right: 20px;
-  bottom: -40px;
+  right: 13px;
+  bottom: -45px;
   cursor: pointer;
 }
 

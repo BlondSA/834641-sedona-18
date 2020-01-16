@@ -40,6 +40,13 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .presentation__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .presentation__video-buttons {
   margin: 0;
   padding: 0;

@@ -69,12 +69,4 @@
 .page-main__reference {
   padding: 0;
   margin: 0;
-
-  @include padding-lr-20;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main__reference {
-    @include padding-lr-0;
-  }
 }

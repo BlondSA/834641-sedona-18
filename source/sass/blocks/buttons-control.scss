@@ -74,6 +74,63 @@
 .buttons-control__image {
   margin: 0;
   padding: 0;
-  fill: #5c6870;
   cursor: pointer;
+
+  &:hover {
+    path {
+      fill: #333333;
+    }
+
+    polygon {
+      fill: #333333;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #333333;
+      opacity: 0.3;
+    }
+
+    polygon {
+      fill: #333333;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .buttons-control__image {
+    path {
+      fill: $white-two;
+    }
+
+    polygon {
+      fill: $white-two;
+    }
+
+    &:hover {
+      path {
+        fill: $white-two;
+        opacity: 0.6;
+      }
+
+      polygon {
+        fill: $white-two;
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      path {
+        fill: $white-two;
+        opacity: 0.3;
+      }
+
+      polygon {
+        fill: $white-two;
+        opacity: 0.3;
+      }
+    }
+  }
 }

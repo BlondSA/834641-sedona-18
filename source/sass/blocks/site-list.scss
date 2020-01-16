@@ -13,7 +13,6 @@
 }
 
 .site-list__item {
-  box-sizing: border-box;
   background-color: $light-grey-blue;
   list-style: none;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 $white-20;
@@ -55,6 +54,16 @@
   display: block;
 
   @include padding-tb-8;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -65,5 +74,15 @@
     line-height: 1.86;
 
     @include padding-tb-15;
+
+    &:hover {
+      background-color: transparent;
+      color: $light-grey-blue;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $black-30;
+    }
   }
 }

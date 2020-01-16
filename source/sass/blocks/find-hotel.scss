@@ -9,13 +9,29 @@
 
 @media (min-width: $tablet-width) {
   .find-hotel__text-wrapper {
-    @include padding-lr-165;
+    @include padding-lr-145;
   }
 }
 
 @media (min-width: $desktop-width) {
   .find-hotel__text-wrapper {
-    @include padding-lr-380;
+    @include padding-lr-350;
+  }
+}
+
+.find-hotel__word-wrap {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__word-wrap {
+    display: inherit;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-hotel__word-wrap {
+    display: inherit;
   }
 }
 
@@ -40,10 +56,24 @@
 
 .find-hotel__button {
   width: 280px;
+
+  &:active > .find-hotel__link {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__button {
+    width: 458px;
+  }
 }
 
 .find-hotel__link {
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

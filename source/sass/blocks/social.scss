@@ -7,9 +7,6 @@
 .social__item {
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $light-grey-blue;
@@ -17,6 +14,8 @@
   margin-left: 3px;
   box-sizing: border-box;
   list-style: none;
+  position: relative;
+  cursor: pointer;
 
   &:first-child {
     margin-left: 0;
@@ -30,10 +29,26 @@
 .social__link {
   padding: 0;
   margin: 0;
+  display: block;
+  height: 100%;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active > .social__image {
+    opacity: 0.3;
+  }
 }
 
 .social__image {
-  padding: 0;
-  margin: 0;
-  fill: $white;
+  position: absolute;
+  fill: $white-two;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
