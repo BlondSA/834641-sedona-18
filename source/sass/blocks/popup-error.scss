@@ -8,6 +8,7 @@
   @include padding-lr-55;
   padding-top: 45px;
   padding-bottom: 35px;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,7 +22,7 @@
 .popup-error__title {
   margin: 0;
   text-transform: uppercase;
-  font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -42,7 +43,7 @@
 .popup-error__description {
   margin: 0;
   text-transform: uppercase;
-  font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;

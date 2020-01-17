@@ -37,7 +37,7 @@
         display: block;
         content: "";
         width: 1px;
-        height: 292px;
+        height: 100%;
         background-color: $grey;
         top: 50%;
         right: -1px;
@@ -101,7 +101,7 @@
 
 .form__legend {
   text-transform: uppercase;
-  font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -115,12 +115,14 @@
     width: 400px;
     padding-left: 60px;
     padding-right: 60px;
+    font-size: 21px;
 
     &--tablet-orientation {
       width: 268px;
       padding-left: 0;
       padding-right: 0;
       text-align: left;
+      white-space: nowrap;
     }
   }
 }
@@ -168,16 +170,29 @@
   margin: 0;
   background-color: $light-grey;
   border: none;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
   box-sizing: border-box;
   width: 100%;
-
+  resize: vertical;
 
   &::-webkit-input-placeholder {
     color: $black-two;
-    font-family: "PT Sans", "Arial", "Times New Roman", sans-serif;
+    font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.44;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background: $white-two;
+    outline: 4px solid #e5e5e5;
   }
 }
 
@@ -230,6 +245,12 @@
 
 .form__button {
   width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    width: 50%;
+  }
 }
 
 .form__required {

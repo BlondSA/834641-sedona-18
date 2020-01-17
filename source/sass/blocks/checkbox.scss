@@ -44,10 +44,20 @@
 }
 
 .checkbox__input {
-  appearance: none;
+  @include visually-hidden;
 
   &:checked ~ .checkbox__icon {
     background: $light-grey url("../img/icon-tick.svg") no-repeat center center;
+
+    &:hover {
+      border: 5px solid #e5e5e5;
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      border: 5px solid #d5d5d5;
+      background: #d5d5d5 url("../img/icon-tick-active.svg") no-repeat center center;
+    }
   }
 }
 
@@ -62,4 +72,14 @@
   bottom: 0;
   left: 0;
   cursor: pointer;
+
+  &:hover {
+    border: 5px solid #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    border: 5px solid #d5d5d5;
+    background-color: #d5d5d5;
+  }
 }
