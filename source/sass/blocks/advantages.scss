@@ -29,8 +29,8 @@
   .advantages__text-block {
     width: 256px;
     box-sizing: border-box;
-    padding-top: 46px;
-    padding-bottom: 47px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 
     @include padding-lr-45;
   }
@@ -39,6 +39,7 @@
 @media (min-width: $desktop-width) {
   .advantages__text-block {
     width: 400px;
+    padding-top: 52px;
 
     @include padding-lr-60;
 
@@ -122,4 +123,10 @@
   line-height: 1.5;
   text-transform: uppercase;
   margin-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description {
+    margin-top: 21px;
+  }
 }

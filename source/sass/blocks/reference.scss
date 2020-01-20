@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 158px;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
 
     @include padding-lr-0;
   }
@@ -22,6 +22,7 @@
 @media (min-width: $desktop-width) {
   .reference {
     flex-direction: row;
+    padding-bottom: 81px;
   }
 }
 
@@ -149,6 +150,7 @@
     justify-content: center;
     align-items: center;
     font-size: 21px;
+    margin-bottom: 18px;
   }
 }
 
@@ -157,6 +159,12 @@
   line-height: 1.5;
   text-transform: uppercase;
   margin-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .reference__description {
+    margin-top: 18px;
+  }
 }
 
 .reference__word-wrap {

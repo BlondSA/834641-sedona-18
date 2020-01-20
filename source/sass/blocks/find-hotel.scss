@@ -43,15 +43,35 @@
   font-weight: bold;
   line-height: 1.24;
   color: $black-two;
-  margin-bottom: 33px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__title {
+    margin-bottom: 26px;
+    font-size: 30px;
+  }
 }
 
 .find-hotel__description {
   padding: 0;
   margin: 0;
   line-height: 1.71;
-  margin-top: 33px;
-  margin-bottom: 40px;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__description {
+    margin-top: 26px;
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-hotel__description {
+    margin-bottom: 48px;
+  }
 }
 
 .find-hotel__button {

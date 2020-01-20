@@ -148,6 +148,11 @@ $grey: #dbdbdb;
   padding-bottom: 44px;
 }
 
+@mixin padding-tb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 @mixin padding-tb-60 {
   padding-top: 60px;
   padding-bottom: 60px;

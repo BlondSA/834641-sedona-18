@@ -1,6 +1,13 @@
 .presentation {
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 42px;
+}
+
+@media (min-width: $desktop-width) {
+  .presentation {
+    padding-bottom: 87px;
+  }
 }
 
 .presentation__text-wrapper {
@@ -8,13 +15,25 @@
   margin: 0;
 
   @include padding-lr-40;
-  @include padding-tb-40;
+  padding-top: 36px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .presentation__text-wrapper {
-    @include padding-tb-0;
-    @include padding-lr-0;
+    padding-top: 58px;
+    padding-bottom: 73px;
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .presentation__text-wrapper {
+    padding-top: 63px;
+    padding-bottom: 71px;
+    padding-left: 185px;
+    padding-right: 185px;
   }
 }
 
@@ -25,14 +44,27 @@
   font-weight: bold;
   line-height: 1.44;
   color: $black-two;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation__title {
+    font-size: 30px;
+    margin-bottom: 23px;
+  }
 }
 
 .presentation__description {
   margin: 0;
   padding: 0;
   line-height: 1.71;
-  margin-top: 33px;
+  margin-top: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .presentation__description {
+    margin-top: 23px;
+  }
 }
 
 .presentation__video {

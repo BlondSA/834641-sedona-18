@@ -16,7 +16,8 @@
 @media (min-width: $tablet-width) {
   .page-main__promo-block {
     margin-top: 0;
-    padding-top: 83px;
+    padding-top: 77px;
+    padding-bottom: 91px;
   }
 }
 
@@ -55,11 +56,25 @@
 }
 
 .page-main__find-hotel {
-  padding-top: 33px;
+  padding-top: 30px;
 
   @include padding-lr-20;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__find-hotel {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__find-hotel {
+    padding-bottom: 67px;
+  }
+}
+
 
 .page-main__map {
   margin: 0;
