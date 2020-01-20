@@ -1,7 +1,19 @@
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+
+  &--form-align {
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .copyright__text {
@@ -12,6 +24,7 @@
   text-align: center;
   color: $black-two;
   margin-right: 5px;
+  letter-spacing: 0.1px;
 }
 
 .copyright__link {

@@ -9,8 +9,8 @@
   min-height: 56px;
   display: flex;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 23px;
+  margin-bottom: 23px;
 
   &:first-of-type {
     margin-top: 0;
@@ -25,14 +25,16 @@
   .checkbox {
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 174px;
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     &:first-of-type {
-      margin-top: 25px;
+      margin-top: 15px;
     }
 
     &:last-of-type {
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
   }
 }

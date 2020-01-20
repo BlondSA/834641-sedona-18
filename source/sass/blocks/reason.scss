@@ -24,7 +24,9 @@
 
 .reason__text-block {
   @include padding-lr-15;
-  @include padding-tb-33;
+  //поменял 17/01
+  padding-top: 27px;
+  padding-bottom: 27px;
   box-sizing: border-box;
 
   &--border-top {
@@ -51,8 +53,8 @@
 @media (min-width: $desktop-width) {
   .reason__text-block {
     width: 400px;
-    padding-top: 50px;
     padding-bottom: 70px;
+    padding-top: 42px;
 
     @include padding-lr-50;
 

@@ -19,12 +19,14 @@
   padding: 0;
 
   @include padding-lr-25;
-  @include padding-tb-23;
+  padding-top: 23px;
+  padding-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
   .video-buttons__buttons-control {
     @include padding-lr-35;
     @include padding-tb-35;
+    padding-right: 43px;
   }
 }

@@ -2,17 +2,19 @@
   margin: 0;
   padding: 0;
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 42px;
+  padding-bottom: 5px;
 
   @include padding-lr-25;
 
   &--photo-padding {
-    padding-bottom: 33px;
+    padding-top: 40px;
+    padding-bottom: 26px;
   }
 
   &--form-padding {
-    padding-bottom: 22px;
+    padding-top: 40px;
+    padding-bottom: 17px;
 
     @include padding-lr-20;
   }
@@ -39,19 +41,18 @@
 @media (min-width: $tablet-width) {
   .page-info {
     @include padding-lr-130;
-    padding-top: 51px;
-    padding-bottom: 55px;
+    @include padding-tb-50;
 
     &--photo-padding {
       @include padding-lr-170;
       padding-top: 76px;
-      padding-bottom: 75px;
+      padding-bottom: 70px;
     }
 
     &--form-padding {
       @include padding-lr-165;
-      padding-top: 71px;
-      padding-bottom: 84px;
+      padding-top: 77px;
+      padding-bottom: 74px;
     }
   }
 }
@@ -60,18 +61,18 @@
   .page-info {
     @include padding-lr-355;
     padding-top: 51px;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
 
     &--photo-padding {
       @include padding-lr-380;
       padding-top: 113px;
-      padding-bottom: 77px;
+      padding-bottom: 70px;
     }
 
     &--form-padding {
       @include padding-lr-380;
-      padding-top: 108px;
-      padding-bottom: 69px;
+      padding-top: 114px;
+      padding-bottom: 58px;
     }
   }
 }
@@ -83,12 +84,20 @@
   @include text-style-18;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  &--photo-font-size {
+    margin-bottom: 25px;
+  }
+
+  &--form-font-size {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-info__title {
     font-size: 21px;
-    line-height: 1.86;
+    line-height: 1.2;
 
     &--photo-font-size {
       font-size: 30px;
@@ -98,6 +107,7 @@
     &--form-font-size {
       font-size: 30px;
       line-height: 0.87;
+      margin-bottom: 30px;
     }
   }
 }
@@ -110,14 +120,27 @@
   color: $black;
   text-transform: uppercase;
   margin-top: 30px;
+
+  &--photo-font-size {
+    line-height: 1.76;
+    margin-top: 25px;
+  }
+
+  &--form-font-size {
+    line-height: 1.78;
+    letter-spacing: 0.09px;
+    margin-top: 25px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-info__text {
     line-height: 1.86;
+    letter-spacing: normal;
 
     &--photo-font-size {
       line-height: 1.71;
+      margin-top: 32px;
     }
 
     &--form-font-size {

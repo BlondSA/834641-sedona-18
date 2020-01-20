@@ -71,7 +71,7 @@
     <main class="page-main">
       <div class="page-main__promo-block promo-block promo-block--minimal">
         <img
-          class="promo-block__image"
+          class="promo-block__image promo-block__image--minimal"
           src="img/text-sedona.svg"
           width="229"
           height="39"
@@ -145,12 +145,14 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Контактная информация:</legend>
-              <div class="form__fields-wrapper-contacts">
+              <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
+              <div class="form__fields-wrapper form__fields-wrapper--contacts">
                 <div class="form__field input input--vertical">
-                  <label class="input__label" for="telephone"
+                  <label
+                    class="input__label input__label--vertical"
+                    for="telephone"
                     ><span class="input__text-hidden">Контактный</span>
                     телефон*:</label
                   >
@@ -167,7 +169,7 @@
                   </div>
                 </div>
                 <div class="form__field input input--vertical">
-                  <label class="input__label" for="email"
+                  <label class="input__label input__label--vertical" for="email"
                     >Электронная почта*:</label
                   >
                   <div class="input__field-wrapper">
@@ -227,9 +229,9 @@
               </label>
             </fieldset>
           </div>
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--attractions">
             <fieldset class="form__fieldset">
-              <legend class="form__legend">
+              <legend class="form__legend form__legend--attractions">
                 посещенные достопримечательности:
               </legend>
               <div class="form__rows-wrapper">
@@ -384,7 +386,7 @@
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__copyright copyright copyright--form-align">
         <h2 class="copyright__text">Разработано</h2>
         <a
           class="copyright__link"
