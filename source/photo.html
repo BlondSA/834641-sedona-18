@@ -51,11 +51,11 @@
           <picture>
             <source
               media="(min-width: 1200px)"
-              srcset="img/logo-sedona-desktop.svg 1x"
+              srcset="img/logo-sedona-desktop.svg"
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/logo-sedona-tablet.svg 1x"
+              srcset="img/logo-sedona-tablet.svg"
             />
             <img
               class="logo__image"
@@ -100,15 +100,22 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-sunset-desktop@1x.jpg 1x"
+                  srcset="
+                    img/photo-sunset-desktop@1x.jpg 1x,
+                    img/photo-sunset-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/photo-sunset-tablet@1x.jpg 1x"
+                  srcset="
+                    img/photo-sunset-tablet@1x.jpg 1x,
+                    img/photo-sunset-tablet@2x.jpg 2x
+                  "
                 />
                 <img
                   class="photo-item__image"
-                  src="img/photo-sunset-mobile@1x.jpg"
+                  src="img/photo-sunset-mobile@1x.jpg 1x"
+                  srcset="img/photo-sunset-mobile@2x.jpg 2x"
                   width="280"
                   height="280"
                   atl="Просторы"
@@ -168,22 +175,31 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-cactus-desktop@1x.jpg 1x"
+                  srcset="
+                    img/photo-cactus-desktop@1x.jpg 1x,
+                    img/photo-cactus-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/photo-cactus-tablet@1x.jpg 1x"
+                  srcset="
+                    img/photo-cactus-tablet@1x.jpg 1x,
+                    img/photo-cactus-tablet@2x.jpg 2x
+                  "
                 />
                 <img
                   class="photo-item__image"
-                  src="img/photo-cactus-mobile@1x.jpg"
+                  src="img/photo-cactus-mobile@1x.jpg 1x"
+                  srcset="img/photo-cactus-mobile@2x.jpg 2x"
                   width="280"
                   height="280"
                   alt="Местная растительность"
                 />
               </picture>
             </a>
-            <figcaption class="photo-item__caption photo-item__caption--padding-right">
+            <figcaption
+              class="photo-item__caption photo-item__caption--padding-right"
+            >
               <div class="photo-item__text-wrapper">
                 <h2 class="photo-item__title">
                   Местная растительность
@@ -238,22 +254,31 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-roads-desktop@1x.jpg 1x"
+                  srcset="
+                    img/photo-roads-desktop@1x.jpg 1x,
+                    img/photo-roads-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/photo-roads-tablet@1x.jpg 1x"
+                  srcset="
+                    img/photo-roads-tablet@1x.jpg 1x,
+                    img/photo-roads-tablet@2x.jpg 2x
+                  "
                 />
                 <img
                   class="photo-item__image"
-                  src="img/photo-roads-mobile@1x.jpg"
+                  src="img/photo-roads-mobile@1x.jpg 1x"
+                  srcset="img/photo-roads-mobile@2x.jpg 2x"
                   width="280"
                   height="280"
                   alt="Дорога на север"
                 />
               </picture>
             </a>
-            <figcaption class="photo-item__caption photo-item__caption--padding-right-road">
+            <figcaption
+              class="photo-item__caption photo-item__caption--padding-right-road"
+            >
               <div class="photo-item__text-wrapper">
                 <h2 class="photo-item__title">Дорога на север</h2>
                 <p class="photo-item__author">Автор фото: Петр</p>
@@ -306,22 +331,31 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop@1x.jpg 1x"
+                  srcset="
+                    img/photo-bridge-desktop@1x.jpg 1x,
+                    img/photo-bridge-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/photo-bridge-tablet@1x.jpg 1x"
+                  srcset="
+                    img/photo-bridge-tablet@1x.jpg 1x,
+                    img/photo-bridge-tablet@2x.jpg 2x
+                  "
                 />
                 <img
                   class="photo-item__image"
-                  src="img/photo-bridge-mobile@1x.jpg"
+                  src="img/photo-bridge-mobile@1x.jpg 1x"
+                  srcset="img/photo-bridge-mobile@2x.jpg 2x"
                   width="280"
                   height="280"
                   alt="Мост Дьявола"
                 />
               </picture>
             </a>
-            <figcaption class="photo-item__caption photo-item__caption--padding-right">
+            <figcaption
+              class="photo-item__caption photo-item__caption--padding-right"
+            >
               <div class="photo-item__text-wrapper">
                 <h2 class="photo-item__title">Мост дьявола</h2>
                 <p class="photo-item__author">Автор фото: Антон</p>
@@ -376,15 +410,16 @@
         <picture>
           <source
             media="(min-width: 1200px)"
-            srcset="img/video-desktop@1x.jpg 1x"
+            srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="img/video-tablet@1x.jpg 1x"
+            srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x"
           />
           <img
             class="presentation__video"
-            src="img/video-mobile@1x.jpg"
+            src="img/video-mobile@1x.jpg 1x"
+            srcset="img/video-mobile@2x.jpg 2x"
             width="321px"
             height="201"
           />
