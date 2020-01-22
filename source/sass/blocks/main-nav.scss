@@ -7,10 +7,11 @@
 
 .main-nav__toggle-close {
   position: absolute;
-  top: -222px;
-  right: 7px;
+  top: 15px;
+  right: 13px;
   fill: $white-two;
   display: none;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,9 +30,6 @@
 }
 
 .main-nav__toggle-image {
-  margin: 0;
-  padding: 0;
-  object-fit: contain;
   fill: $light-grey-blue;
 }
 

@@ -162,6 +162,7 @@
   opacity: 0.3;
   left: 0;
   top: -2px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -178,9 +179,6 @@
 
   .photo-item__likes-image {
     opacity: 1;
-
-    path {
-      fill: $white-two;
-    }
+    fill: $white-two;
   }
 }

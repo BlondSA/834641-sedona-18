@@ -51,4 +51,19 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  &--twitter {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+  }
+
+  &--youtube {
+    width: 20px;
+    height: 14px;
+  }
 }
