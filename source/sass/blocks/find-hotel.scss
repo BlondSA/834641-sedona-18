@@ -58,24 +58,26 @@
   margin: 0;
   line-height: 1.71;
   margin-top: 18px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
   .find-hotel__description {
     margin-top: 26px;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .find-hotel__description {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 }
 
 .find-hotel__button {
+  margin: 0 auto;
   width: 280px;
+  box-sizing: border-box;
 
   &:active > .find-hotel__link {
     color: rgba(255, 255, 255, 0.3);
