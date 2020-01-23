@@ -129,7 +129,7 @@
   }
 }
 
-.input__icon {
+.input__box {
   position: absolute;
   display: block;
   content: "";
@@ -138,12 +138,14 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  background-color: $dark-grey;
+}
 
-  &--telephone {
-    background: 50% 50% url("../img/icon-phone.svg") $dark-grey no-repeat;
-  }
-
-  &--email {
-    background: 50% 50% url("../img/icon-mail.svg") $dark-grey no-repeat;
-  }
+.input__icon {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
