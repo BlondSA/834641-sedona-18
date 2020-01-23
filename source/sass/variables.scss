@@ -10,6 +10,7 @@ $retina-dppx: 1.5dppx;
   src: local("PTSans"),
     url("../fonts/ptsans.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@ $retina-dppx: 1.5dppx;
     url("../fonts/ptsansbold.woff2") format("woff2"),
     url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
+  font-display: swap;
 }
 
 @mixin text-style-18 {
@@ -27,6 +29,7 @@ $retina-dppx: 1.5dppx;
   line-height: 1.44;
   text-align: center;
   color: $black-two;
+  font-display: swap;
 }
 
 // COLORS
