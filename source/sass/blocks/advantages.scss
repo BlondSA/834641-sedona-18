@@ -8,13 +8,13 @@
   .advantages {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &--reverse {
       flex-direction: row-reverse;
     }
   }
 }
-
 
 .advantages__text-block {
   margin: 0;
@@ -39,7 +39,8 @@
 @media (min-width: $desktop-width) {
   .advantages__text-block {
     width: 400px;
-    padding-top: 52px;
+    padding-top: 50px;
+    padding-bottom: 60px;
 
     @include padding-lr-60;
 

@@ -5,36 +5,28 @@
   box-sizing: border-box;
 }
 
-.main-nav__toggle-close {
-  position: absolute;
-  top: 15px;
-  right: 13px;
-  fill: $white-two;
-  display: none;
-  cursor: pointer;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__toggle-close {
-    display: none;
-  }
-}
-
 .main-nav__toggle {
   position: absolute;
-  background: none;
-  border: none;
-  right: 13px;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  right: 20px;
   bottom: -42px;
-  cursor: pointer;
+  border: none;
+  // При реализации с JS удалить - "display: none;"
+  display: none;
 }
 
-.main-nav__toggle-image {
-  fill: $light-grey-blue;
+.main-nav__toggle--cross {
+  background-color: transparent;
+  background-image: url("../img/icon-cross.svg");
+  right: 20px;
+  top: 17px;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle-image {
+  .main-nav__toggle {
     @include visually-hidden;
   }
 }

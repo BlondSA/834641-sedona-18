@@ -13,6 +13,7 @@
     @include padding-lr-60;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
@@ -26,7 +27,7 @@
   margin: 0;
   padding: 0;
   padding-top: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 
   @include padding-lr-20;
 }

@@ -8,9 +8,23 @@
 
 @media (min-width: $tablet-width) {
   .video-buttons {
-    margin-top: -95px;
+    position: absolute;
+    width: 648px;
+    height: 93px;
+    bottom: 42px;
+    left: 60px;
 
     @include padding-lr-0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-buttons {
+    position: absolute;
+    width: 800px;
+    height: auto;
+    bottom: 87px;
+    left: 200px;
   }
 }
 

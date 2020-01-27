@@ -2,7 +2,7 @@
   position: relative;
   cursor: pointer;
   padding-left: 80px;
-  min-height: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   margin-top: 14px;
@@ -32,6 +32,10 @@
 .radio__input {
   @include visually-hidden;
 
+  &:focus ~ .radio__icon {
+    outline: 3px solid #5fa0f8;
+  }
+
   &:checked ~ .radio__icon {
     background-color: $black;
 
@@ -50,8 +54,9 @@
   background-color: #f2f2f2;
   border: 17px solid #f2f2f2;
   border-radius: 50%;
-  bottom: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   cursor: pointer;
 
   &:hover {

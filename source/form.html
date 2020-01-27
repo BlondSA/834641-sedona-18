@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.min.css" rel="stylesheet" />
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>
       svg4everybody();
     </script>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" />
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" />
   </head>
   <body>
     <div style="display:none">
@@ -17,6 +19,7 @@
     </div>
     <header class="page-header">
       <nav class="page-header__main-nav main-nav">
+        <!-- Класcы переключающие состояние - ".site-list" и ".site-list--open" -->
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -25,7 +28,7 @@
             <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Форма отзыва</a>
+            <a class="site-list__link site-list__link--active">Форма отзыва</a>
           </li>
           <li class="site-list__item">
             <a
@@ -35,19 +38,19 @@
             >
           </li>
         </ul>
-        <button class="main-nav__toggle-close" type="button">
-          <svg class="main-nav__toggle-close-image" width="22" height="23">
-            <use xlink:href="#icon-cross"></use>
-          </svg>
-        </button>
-        <button class="main-nav__toggle" type="button">
-          <svg class="main-nav__toggle-image" width="23" height="21">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
-        </button>
+        <!-- Классы переключающие соcтояние - ".main-nav__toggle" и ".main-nav__toggle--cross" -->
+        <button
+          class="main-nav__toggle"
+          type="button"
+          aria-label="Открыть меню"
+        ></button>
       </nav>
       <div class="page-header__logo logo">
-        <a class="logo__link" href="index.html">
+        <a
+          class="logo__link"
+          href="index.html"
+          aria-label="Перейти на гланую страницу"
+        >
           <picture>
             <source
               media="(min-width: 1200px)"
@@ -92,17 +95,15 @@
       <form
         class="page-main__form form"
         action="https://echo.htmlacademy.ru"
-        method="get"
+        method="post"
         autocomplete="on"
       >
         <div class="form__list">
           <div
-            class="form__fieldset-wrapper form__fieldset-wrapper--tablet-orientation"
+            class="form__fieldset-wrapper form__fieldset-wrapper--tablet-orientation form__fieldset-wrapper--desktop-orientation"
           >
-            <fieldset class="form__fieldset form__fieldset--border-top-not">
-              <legend
-                class="form__legend form__legend--tablet-orientation form__fieldset-wrapper--desktop-orientation"
-              >
+            <fieldset class="form__fieldset">
+              <legend class="form__legend form__legend--tablet-orientation">
                 Представьтесь:
               </legend>
               <div class="form__field input">
@@ -147,7 +148,9 @@
           </div>
           <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
             <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend--contacts">
+              <legend
+                class="form__legend form__legend--contacts form__legend--line-through"
+              >
                 Контактная информация:
               </legend>
               <div class="form__fields-wrapper form__fields-wrapper--contacts">
@@ -168,7 +171,7 @@
                       required=""
                     />
                     <span class="input__box">
-                      <svg class="input__icon" width="16px" height="16px">
+                      <svg class="input__icon" width="19px" height="19px">
                         <use xlink:href="#icon-phone"></use>
                       </svg>
                     </span>
@@ -200,17 +203,18 @@
           <div
             class="form__fieldset-wrapper form__fieldset-wrapper--order-tablet form__fieldset-wrapper--tablet-orientation form__fieldset-wrapper--desktop-orientation"
           >
-            <fieldset class="form__fieldset form__fieldset--border-top-not">
+            <fieldset class="form__fieldset">
               <legend
                 class="form__legend form__legend--tablet-orientation form__legend--padding-left"
               >
-                ВАше Общее впечатление:
+                Ваше общее впечатление:
               </legend>
               <label class="form__row radio" for="filter-radio-good">
                 <input
                   class="radio__input"
                   type="radio"
                   id="filter-radio-good"
+                  value="good"
                   name="filter-radio"
                   checked=""
                 />
@@ -222,6 +226,7 @@
                   class="radio__input"
                   type="radio"
                   id="filter-radio-not-good"
+                  value="not-good"
                   name="filter-radio"
                 />
                 <span class="radio__icon"></span>
@@ -232,6 +237,7 @@
                   class="radio__input"
                   type="radio"
                   id="filter-radio-difficult"
+                  value="difficult"
                   name="filter-radio"
                 />
                 <span class="radio__icon"></span>
@@ -243,8 +249,10 @@
             class="form__fieldset-wrapper form__fieldset-wrapper--attractions"
           >
             <fieldset class="form__fieldset">
-              <legend class="form__legend form__legend--attractions">
-                посещенные достопримечательности:
+              <legend
+                class="form__legend form__legend--attractions form__legend--line-through"
+              >
+                Посещенные достопримечательности:
               </legend>
               <div class="form__rows-wrapper">
                 <label class="form__row checkbox" for="devils-bridge">
@@ -287,7 +295,9 @@
           </div>
           <div class="form__fieldset-wrapper">
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Опишите свои эмоции:</legend>
+              <legend class="form__legend form__legend--line-through">
+                Опишите свои эмоции:
+              </legend>
               <textarea
                 class="form__textarea"
                 name="textarea"
@@ -300,14 +310,14 @@
         </div>
         <div class="form__footer">
           <button class="form__button button" type="submit">
-            ОТПРАВИТЬ ОТЗЫВ
+            Отправить отзыв
           </button>
           <p class="form__required">* — обязательные поля</p>
         </div>
       </form>
     </main>
     <footer class="page-footer">
-      <h1 class="page-footer__contacts contacts">#visitSEDONA</h1>
+      <p class="page-footer__contacts contacts">#visitSEDONA</p>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a
@@ -384,11 +394,13 @@
       </div>
     </footer>
     <div class="popup-error">
-      <h1 class="popup-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h1>
+      <h1 class="popup-error__title">Что-то пошло не так!</h1>
       <p class="popup-error__description">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="popup-error__button button" type="button">OK</button>
+      <button class="popup-error__button button" type="button">
+        OK
+      </button>
     </div>
     <div class="popup-send">
       <div class="popup-send__text-wrapper">
@@ -400,7 +412,7 @@
       </div>
       <div class="popup-send__button-wrapper">
         <button class="popup-send__button button" type="button">
-          ЗАкРЫТЬ ОКНО
+          Закрыть окно
         </button>
       </div>
     </div>

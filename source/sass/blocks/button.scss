@@ -26,8 +26,10 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &:disabled {
-    background-color: #e5e5e5;
-    cursor: inherit;
+  // Модификатор для отключения кнопки
+  &--disabled {
+    background-color: $white-four;
+    color: $white;
+    pointer-events: none;
   }
 }

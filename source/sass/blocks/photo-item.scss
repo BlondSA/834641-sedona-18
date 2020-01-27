@@ -82,6 +82,7 @@
 
     &--padding-right-road {
       padding-right: 38px;
+      background-color: #eaeaea;
     }
   }
 }
@@ -108,8 +109,8 @@
   font-weight: bold;
   line-height: 1.71;
   color: $black-two;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 14px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -127,7 +128,7 @@
 .photo-item__author {
   margin: 0;
   padding: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 12px;
 }
 

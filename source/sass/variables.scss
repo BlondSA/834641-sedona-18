@@ -67,6 +67,9 @@ $lipstick: #d22856;
 $green-apple: #81e31e;
 $dark-grey: #e6e6e6;
 $grey: #dbdbdb;
+$black-three: #000000;
+$black-four: #333333;
+$white-four: #e5e5e5;
 
 // VISUALLY-HIDDEN
 @mixin visually-hidden {
@@ -231,6 +234,11 @@ $grey: #dbdbdb;
 @mixin padding-lr-60 {
   padding-left: 60px;
   padding-right: 60px;
+}
+
+@mixin padding-lr-65 {
+  padding-left: 65px;
+  padding-right: 65px;
 }
 
 @mixin padding-lr-70 {

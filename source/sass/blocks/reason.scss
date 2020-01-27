@@ -24,7 +24,6 @@
 
 .reason__text-block {
   @include padding-lr-15;
-  //поменял 17/01
   padding-top: 27px;
   padding-bottom: 27px;
   box-sizing: border-box;
@@ -39,13 +38,14 @@
     width: 256px;
     padding-top: 40px;
     padding-bottom: 49px;
-    padding-left: 49px;
-    padding-right: 49px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     &--border-top {
       border-top: none;
 
-      @include padding-lr-55;
+      padding-left: 56px;
+      padding-right: 56px;
     }
   }
 }
@@ -59,7 +59,7 @@
     @include padding-lr-50;
 
     &--border-top {
-      @include padding-lr-70;
+      @include padding-lr-65;
     }
   }
 }
@@ -67,6 +67,7 @@
 .reason__title {
   margin: 0;
   padding: 0;
+  color: $black-three;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -91,6 +92,7 @@
 .reason__number {
   margin: 0;
   padding: 0;
+  color: $black-four;
   text-transform: uppercase;
   line-height: 1.5;
   margin-top: 10px;
@@ -100,6 +102,7 @@
 .reason__description {
   margin: 0;
   padding: 0;
+  color: $black-four;
   line-height: 1.5;
   text-transform: uppercase;
   margin-top: 15px;

@@ -38,7 +38,7 @@
   }
 
   &:last-of-type {
-    padding-bottom: 50px;
+    padding-bottom: 45px;
   }
 }
 
@@ -82,7 +82,7 @@
     }
 
     &:last-of-type {
-      padding-bottom: 60px;
+      padding-bottom: 54px;
     }
   }
 }
@@ -93,6 +93,10 @@
 
     &--tablet-orientation {
       width: 400px;
+    }
+
+    &--contacts {
+      padding-top: 66px;
     }
 
     &--desktop-orientation {
@@ -112,6 +116,10 @@
     &:first-of-type .form__field {
       width: 400px;
     }
+
+    &:last-of-type {
+      padding-bottom: 55px;
+    }
   }
 }
 
@@ -119,28 +127,10 @@
   margin: 0;
   padding: 0;
   border: none;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: $tablet-width) {
-  .form__fieldset {
-    flex-direction: row;
-    border-top: 1px solid $grey;
-
-    &--border-top-not {
-      border-top: none;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form__fieldset {
-    flex-direction: row;
-  }
 }
 
 .form__legend {
+  margin: 0 auto 20px;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
@@ -148,7 +138,7 @@
   line-height: 1.44;
   text-align: center;
   color: $black-two;
-  margin-bottom: 20px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -158,6 +148,7 @@
     padding-right: 60px;
     font-size: 21px;
     margin-bottom: 55px;
+    background-color: #ffffff;
 
     &--contacts {
       margin-bottom: 14px;
@@ -174,12 +165,31 @@
       padding-right: 0;
       text-align: left;
       white-space: nowrap;
+      margin-left: 0;
+    }
+  }
+
+  .form__legend--line-through {
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 648px;
+      height: 1px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      background-color: $grey;
+      z-index: -1;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__legend {
+    padding-left: 0;
+    padding-right: 0;
+
     &--tablet-orientation {
       width: inherit;
     }
@@ -190,6 +200,21 @@
 
     &--contacts {
       margin-bottom: 71px;
+    }
+  }
+
+  .form__legend--line-through {
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 960px;
+      height: 1px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      background-color: $grey;
+      z-index: -1;
     }
   }
 }

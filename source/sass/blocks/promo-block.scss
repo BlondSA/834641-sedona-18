@@ -8,6 +8,7 @@
   align-items: center;
   position: relative;
   box-sizing: border-box;
+  background-color: #1a2c33;
 
   @media (min-resolution: 144dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -95,6 +96,10 @@
     &--minimal {
       margin-top: 85px;
       margin-bottom: -20px;
+      padding-top: 134px;
+      padding-bottom: 136px;
+      width: 460px;
+      height: 80px;
     }
   }
 }

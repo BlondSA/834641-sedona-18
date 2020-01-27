@@ -6,7 +6,7 @@
   color: $black-two;
   cursor: pointer;
   padding-left: 80px;
-  min-height: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   margin-top: 23px;
@@ -47,6 +47,10 @@
 
 .checkbox__input {
   @include visually-hidden;
+
+  &:focus ~ .checkbox__icon {
+    outline: 3px solid #5fa0f8;
+  }
 
   &:checked ~ .checkbox__icon {
     background: $light-grey url("../img/icon-tick.svg") no-repeat center center;
